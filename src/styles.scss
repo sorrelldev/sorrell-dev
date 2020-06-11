@@ -1,13 +1,46 @@
 @import "src/variables.scss";
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    background: #222;
-    color: $font-color-primary;
-    padding: 40px 70px 70px 140px;
-    font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: #222;
+  color: $font-color-primary;
+  padding: 40px 70px 70px 140px;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+p {
+  color: $font-color-secondary;
+}
+
+button {
+  -webkit-appearance: button;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: inherit;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  background-color: inherit;
+  box-sizing: border-box;
+  margin: 0px;
+  font: inherit;
+  padding: 0px;
+  border: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }

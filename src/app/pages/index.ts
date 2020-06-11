@@ -1,1 +1,1 @@
-export { PagesModule } from './pages.module'
+export { HomePage } from './home'

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
+import { RouterModule } from '@angular/router'
 
 import { AppComponent } from './app'
 import { HeaderComponent } from './header'
@@ -10,10 +11,8 @@ import { HeaderComponent } from './header'
     HeaderComponent,
   ],
   imports: [
-    BrowserModule
-  ],
-  bootstrap: [
-    AppComponent
+    BrowserModule,
+    RouterModule
   ]
 })
 export class CoreComponentsModule { }
