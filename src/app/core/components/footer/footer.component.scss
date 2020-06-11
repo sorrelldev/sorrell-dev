@@ -1,0 +1,23 @@
+@import "src/variables.scss";
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 45px;
+  background: #252525;
+  border-top: 2px solid #333;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .socials {
+    color: $font-color-tertiary;
+  }
+
+  .copyrights {
+    color: $font-color-secondary;
+  }
+}

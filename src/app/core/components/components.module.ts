@@ -4,11 +4,13 @@ import { RouterModule } from '@angular/router'
 
 import { AppComponent } from './app'
 import { HeaderComponent } from './header'
+import { FooterComponent } from './footer'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
