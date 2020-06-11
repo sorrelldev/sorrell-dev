@@ -1,0 +1,13 @@
+@import "src/variables.scss";
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #222;
+    color: $font-color-primary;
+    padding: 40px 70px 70px 140px;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+}

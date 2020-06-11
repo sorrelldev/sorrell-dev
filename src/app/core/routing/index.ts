@@ -1,0 +1,1 @@
+export { CoreRoutingModule } from './routing.module'

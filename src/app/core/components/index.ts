@@ -1,0 +1,1 @@
+export { CoreComponentsModule } from './components.module'
