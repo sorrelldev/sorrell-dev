@@ -71,26 +71,26 @@
     }
   }
 
+  section > .heading {
+    display: flex;
+    margin-bottom: 30px;
+  
+    h2 {
+      font-size: 21px;
+      font-weight: bold;
+  
+      .border {
+        margin-top: 4px;
+        background: $gradient;
+        width: 100%;
+        height: 2px;
+      }
+    }
+  }
+
   .what-i-do {
     margin-top: 200px;
     margin-bottom: 20px;
-
-    .heading {
-      display: flex;
-      margin-bottom: 30px;
-    
-      h2 {
-        font-size: 21px;
-        font-weight: bold;
-
-        .border {
-          margin-top: 4px;
-          background: $gradient;
-          width: 100%;
-          height: 2px;
-        }
-      }
-    }
 
     .cards {
       display: flex;
@@ -120,6 +120,46 @@
           p {
             padding-right: 30px;
           }
+        }
+      }
+    }
+  }
+
+  .fun-facts {
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20%;
+        background: #333;
+        border: 2px solid #444;
+        border-radius: 10px;
+        padding: 25px 10px 15px;
+
+        .icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: $gradient;
+          height: 40px;
+          min-width: 40px;
+          border-radius: 50%;
+        }
+
+        h3 {
+          margin: 15px 0 5px 0;
+          font-weight: bold;
+        }
+
+        h1 {
+          font-size: 48px;
+          line-height: 56px;
+          color: $font-color-secondary;
         }
       }
     }
