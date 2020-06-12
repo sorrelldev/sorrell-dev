@@ -12,6 +12,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      .avatar-link {
+        border-radius: 50%;
+      }
   
       .avatar {
         width: 320px;
