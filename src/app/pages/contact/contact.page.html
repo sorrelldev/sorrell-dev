@@ -24,7 +24,7 @@
         <div class="border"></div>
       </h2>
     </div>
-    <form #form="ngForm" (ngSubmit)="handleSubmit()">
+    <form #form="ngForm" (ngSubmit)="handleSubmit(form)">
       <div class="columns">
         <div class="column">
           <input 
@@ -68,7 +68,12 @@
           </textarea>
         </div>
       </div>
-      <button type="submit">Send Message</button>
+      <div class="submission">
+        <button type="submit" *ngIf="!(loading$ | async)">Send Message</button>
+        <button type="button" disabled *ngIf="loading$ | async">Sending...</button>
+        <p *ngIf="sent$ | async">Message successfully sent!</p>
+        <p *ngIf="error$ | async">Please try again.</p>
+      </div>
     </form>
   </section>
 </div>
