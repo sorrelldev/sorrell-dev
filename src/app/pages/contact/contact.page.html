@@ -4,10 +4,18 @@
 </section>
 
 <div class="wrapper">
-  <section class="map">
-    <a href="https://goo.gl/maps/GgX6JgmqW9hMfiuT8" target="_blank">
-      <img src="assets/Map.png">
-    </a>
+  <section class="location">
+    <div class="heading">
+      <h2>
+        Where I'm Located
+        <div class="border"></div>
+      </h2>
+    </div>
+    <div class="map">
+      <a href="https://goo.gl/maps/GgX6JgmqW9hMfiuT8" target="_blank">
+        <img src="assets/Map.png">
+      </a>
+    </div>
   </section>
   <section class="contact-form">
     <div class="heading">
@@ -19,12 +27,45 @@
     <form #form="ngForm" (ngSubmit)="handleSubmit()">
       <div class="columns">
         <div class="column">
-          <input type="text" required placeholder="Full Name" name="fullName" [(ngModel)]="contactForm.fullName" />
-          <input type="text" required placeholder="Email Address" name="emailAddress" [(ngModel)]="contactForm.emailAddress" />
-          <input type="text" required placeholder="Subject" name="subject" [(ngModel)]="contactForm.subject" />
+          <input 
+            type="text" 
+            [ngClass]="{'invalid': formErrors.fullName}"
+            required 
+            autocomplete="off" 
+            placeholder="Full Name" 
+            name="fullName" 
+            [(ngModel)]="contactForm.fullName" 
+          />
+          <input 
+            type="text" 
+            [ngClass]="{'invalid': formErrors.emailAddress}"
+            required 
+            autocomplete="off" 
+            placeholder="Email Address" 
+            name="emailAddress" 
+            [(ngModel)]="contactForm.emailAddress" 
+          />
+          <input 
+            type="text" 
+            [ngClass]="{'invalid': formErrors.subject}"
+            required 
+            autocomplete="off" 
+            placeholder="Subject" 
+            name="subject" 
+            [(ngModel)]="contactForm.subject" 
+          />
         </div>
         <div class="column">
-          <textarea type="text" required placeholder="Message" name="message" [(ngModel)]="contactForm.message"></textarea>
+          <textarea 
+            type="text" 
+            [ngClass]="{'invalid': formErrors.message}"
+            required 
+            autocomplete="off" 
+            placeholder="Message" 
+            name="message" 
+            [(ngModel)]="contactForm.message"
+          >
+          </textarea>
         </div>
       </div>
       <button type="submit">Send Message</button>
