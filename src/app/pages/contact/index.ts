@@ -1,1 +1,1 @@
-export { ResumePage } from './resume.page'
+export { ContactPage } from './contact.page'

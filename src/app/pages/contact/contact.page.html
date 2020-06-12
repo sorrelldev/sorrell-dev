@@ -1,0 +1,33 @@
+<section class="hero">
+  <h1>Contact</h1>
+  <span class="sub-title">Get in Touch</span>
+</section>
+
+<div class="wrapper">
+  <section class="map">
+    <a href="https://goo.gl/maps/GgX6JgmqW9hMfiuT8" target="_blank">
+      <img src="assets/Map.png">
+    </a>
+  </section>
+  <section class="contact-form">
+    <div class="heading">
+      <h2>
+        How Can I Help You?
+        <div class="border"></div>
+      </h2>
+    </div>
+    <form #form="ngForm" (ngSubmit)="handleSubmit()">
+      <div class="columns">
+        <div class="column">
+          <input type="text" required placeholder="Full Name" name="fullName" [(ngModel)]="contactForm.fullName" />
+          <input type="text" required placeholder="Email Address" name="emailAddress" [(ngModel)]="contactForm.emailAddress" />
+          <input type="text" required placeholder="Subject" name="subject" [(ngModel)]="contactForm.subject" />
+        </div>
+        <div class="column">
+          <textarea type="text" required placeholder="Message" name="message" [(ngModel)]="contactForm.message"></textarea>
+        </div>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</div>

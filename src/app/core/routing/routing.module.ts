@@ -3,10 +3,12 @@ import { Routes, RouterModule } from '@angular/router'
 
 import { 
   HomePage, 
-  ResumePage 
+  ResumePage, 
+  ContactPage,
 } from '../../pages'
 
 const routes: Routes = [
+  { path: 'contact', component: ContactPage },
   { path: 'resume', component: ResumePage },
   { path: '', component: HomePage },
   { path: '**', redirectTo: '/' }
