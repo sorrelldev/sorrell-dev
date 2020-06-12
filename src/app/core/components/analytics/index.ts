@@ -1,0 +1,1 @@
+export { AnalyticsComponent } from './analytics.component'
