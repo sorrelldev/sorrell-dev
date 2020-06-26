@@ -124,7 +124,7 @@
 
     .hero {
       padding: 24px;
-      margin: 0 -24px 24px -24px;
+      margin: 0 -24px 40px -24px;
 
       h1 {
         font-size: 36px;
@@ -148,6 +148,10 @@
 
         > section {
           width: 100%;
+
+          .heading {
+            margin-bottom: 24px;
+          }
 
           .cards {
             .card {

@@ -145,3 +145,56 @@
     }
   }
 }
+
+@media only screen and (max-width: 900px) {
+  :host {
+    margin-top: 16px;
+
+    .hero {
+      padding: 24px;
+      margin: 0 -24px 40px -24px;
+
+      h1 {
+        font-size: 36px;
+        line-height: 44px;
+      }
+
+      .sub-title {
+        position: relative;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    .wrapper {
+      > section {
+        .heading {
+          margin-bottom: 24px;
+        }
+      }
+
+      .contact-form {
+        margin-top: 24px;
+
+        form {
+          .columns {
+            flex-direction: column;
+
+            > *:first-of-type {
+              margin-bottom: 20px;
+            }
+
+            .column {
+              width: 100%;
+            }
+          }
+
+          .submission {
+            margin-top: 20px;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
