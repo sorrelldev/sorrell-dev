@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core'
+import { Component, ChangeDetectionStrategy, HostListener } from '@angular/core'
 import { GlobalState } from '../../state'
 
 @Component({
@@ -12,5 +12,15 @@ export class SidenavComponent {
 
   HandleSidenav(): void {
     this.globalState.sidenav$.next(false);
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event): void {
+    if (
+      event.target.innerWidth > 900 
+      && this.globalState.sidenav$.getValue()
+    ) {
+      this.globalState.sidenav$.next(false);
+    }
   }
 }
