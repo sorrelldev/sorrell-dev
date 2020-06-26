@@ -6,6 +6,7 @@ import { AppComponent } from './app'
 import { HeaderComponent } from './header'
 import { FooterComponent } from './footer'
 import { AnalyticsComponent } from './analytics'
+import { SidenavComponent } from './sidenav'
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { AnalyticsComponent } from './analytics'
     HeaderComponent,
     FooterComponent,
     AnalyticsComponent,
+    SidenavComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,52 @@
+@import "src/variables.scss";
+
+:host {
+  .sidenav {
+    width: 240px;
+    position: absolute;
+    right: -240px;
+    top: 0;
+    bottom: 0;
+    background: #222;
+    transition: all 200ms ease-in-out;
+    z-index: 2;
+
+    .links {
+      padding: 24px 0;
+
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          height: 48px;
+          padding-left: 40px;
+          color: $font-color-tertiary;
+
+          svg {
+            margin-right: 8px;
+          }
+        }
+
+        .active-link {
+          color: $font-color-primary;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .slide-in {
+    right: 0;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.8);
+  }
+
+  .backdrop {
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+}
