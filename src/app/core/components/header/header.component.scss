@@ -3,6 +3,7 @@
 :host {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   .logo {
     position: relative;
@@ -18,10 +19,6 @@
     }
   }
 
-  .space {
-    flex: 1;
-  }
-
   .links {
     display: flex;
     align-items: center;
@@ -32,10 +29,20 @@
     }
   }
 
-  @media only screen and (max-width: 900px) {
-    .space, 
+  .menu {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  :host {
+    .menu {
+      display: flex;
+      visibility: visible;
+    }
+
     .links {
-      flex: none;
       display: none;
       visibility: hidden;
     }
