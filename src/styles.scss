@@ -61,3 +61,9 @@ svg {
 *:focus {
   outline: 0 !important;
 }
+
+@media only screen and (max-width: 900px) {
+  body {
+    padding: 24px 24px 60px 24px;
+  }
+}

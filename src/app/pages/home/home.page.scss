@@ -168,9 +168,82 @@
           }
   
           h1 {
-            font-size: 48px;
+            font-size: 36px;
             line-height: 56px;
             color: $font-color-secondary;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  :host {
+    padding-top: 40px;
+    .wrapper {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+
+        .avatar {
+          width: 240px;
+          height: 240px;
+
+          img {
+            width: 320px;
+          }
+        }
+  
+        .description {
+          margin-left: 0;
+          margin-top: 40px;
+
+          br {
+            display: none;
+          }
+
+          .buttons {
+            flex-direction: column;
+    
+            a:first-child button {
+              margin-bottom: 12px;
+            }
+  
+            button {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      .what-i-do {
+        margin-top: 40px;
+        margin-bottom: 0;
+
+        .cards {
+          .card {
+            max-width: 100%;
+            margin-bottom: 24px;
+
+            .icon {
+              margin-right: 24px;
+            }
+          }
+        }
+      }
+
+      .fun-facts {
+        margin-bottom: 0;
+        
+        .cards {
+          .card {
+            width: 100%;
+            
+
+            &:not(:last-of-type) {
+              margin-bottom: 16px;
+            }
           }
         }
       }
