@@ -11,7 +11,7 @@ export class SidenavComponent {
   constructor(public globalState: GlobalState) {}
 
   HandleSidenav(): void {
-    this.globalState.sidenav$.next(false);
+    this.globalState.sidenav$.next(false)
   }
 
   @HostListener('window:resize', ['$event'])
@@ -20,7 +20,7 @@ export class SidenavComponent {
       event.target.innerWidth > 900 
       && this.globalState.sidenav$.getValue()
     ) {
-      this.globalState.sidenav$.next(false);
+      this.globalState.sidenav$.next(false)
     }
   }
 }
