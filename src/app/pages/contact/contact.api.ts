@@ -8,7 +8,7 @@ export class ContactApi {
 
   sendMail(contactForm: IContactForm) {
     return this.http.get(
-      "https://us-central1-duck-digital.cloudfunctions.net/sendMail"
+      "https://us-central1-jsorr-dev.cloudfunctions.net/sendMail"
       + `?name=${contactForm.fullName}`
       + `&emailAddress=${contactForm.emailAddress}`
       + `&subject=${contactForm.subject}`
