@@ -5,7 +5,7 @@
     ]
   },
   "hosting": {
-    "public": "dist/sorrelldev/browser",
+    "public": "dist/sorrell-dev/browser",
     "ignore": [
       "firebase.json",
       "**/.*",

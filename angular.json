@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sorrelldev": {
+    "sorrell-dev": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/sorrelldev/browser",
+            "outputPath": "dist/sorrell-dev/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "sorrelldev:build:production"
+              "browserTarget": "sorrell-dev:build:production"
             },
             "development": {
-              "browserTarget": "sorrelldev:build:development"
+              "browserTarget": "sorrell-dev:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,13 +83,13 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sorrelldev:build"
+            "browserTarget": "sorrell-dev:build"
           }
         },
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/sorrelldev/server",
+            "outputPath": "dist/sorrell-dev/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json",
             "inlineStyleLanguage": "scss"
@@ -116,12 +116,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "sorrelldev:build:development",
-              "serverTarget": "sorrelldev:server:development"
+              "browserTarget": "sorrell-dev:build:development",
+              "serverTarget": "sorrell-dev:server:development"
             },
             "production": {
-              "browserTarget": "sorrelldev:build:production",
-              "serverTarget": "sorrelldev:server:production"
+              "browserTarget": "sorrell-dev:build:production",
+              "serverTarget": "sorrell-dev:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -137,12 +137,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "sorrelldev:build:production",
-              "serverTarget": "sorrelldev:server:production"
+              "browserTarget": "sorrell-dev:build:production",
+              "serverTarget": "sorrell-dev:server:production"
             },
             "development": {
-              "browserTarget": "sorrelldev:build:development",
-              "serverTarget": "sorrelldev:server:development"
+              "browserTarget": "sorrell-dev:build:development",
+              "serverTarget": "sorrell-dev:server:development"
             }
           },
           "defaultConfiguration": "production"
@@ -150,5 +150,5 @@
       }
     }
   },
-  "defaultProject": "sorrelldev"
+  "defaultProject": "sorrell-dev"
 }
