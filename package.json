@@ -1,5 +1,5 @@
 {
-  "name": "sorrell-dev",
+  "name": "sorrelldev",
   "version": "1.1.0",
   "scripts": {
     "ng": "ng",
@@ -8,10 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev:ssr": "ng run sorrell-dev:serve-ssr",
-    "serve:ssr": "node dist/sorrell-dev/server/main.js",
-    "build:ssr": "ng build && ng run sorrell-dev:server",
-    "prerender": "ng run sorrell-dev:prerender",
+    "dev:ssr": "ng run sorrelldev:serve-ssr",
+    "serve:ssr": "node dist/sorrelldev/server/main.js",
+    "build:ssr": "ng build && ng run sorrelldev:server",
+    "prerender": "ng run sorrelldev:prerender",
     "deploy": "npm run build:ssr && npm run prerender && firebase deploy --only hosting"
   },
   "private": false,
